@@ -16,6 +16,11 @@ zplugin ice pick"async.zsh" src"pure.zsh"; zplugin light sindresorhus/pure
 # Fancy syntax highlighting
 zplugin light zdharma/fast-syntax-highlighting
 
+# fzf binary, completion, and zsh key bindings
+zplugin ice from"gh-r" as"program"; zplugin load junegunn/fzf-bin
+zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh'
+zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zsh'
+
 # Aliases
 alias g=git
 alias gs='git status'
@@ -25,6 +30,5 @@ alias gd='git diff'
 setopt histignorealldups
 setopt sharehistory
 
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# Custom shell configurations
+[ -e "$HOME/.zsh/rvm.zsh" ] && source "$HOME/.zsh/rvm.zsh"
