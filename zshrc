@@ -32,3 +32,4 @@ setopt sharehistory
 
 # Custom shell configurations
 [ -e "$HOME/.zsh/rvm.zsh" ] && source "$HOME/.zsh/rvm.zsh"
+[ -e "$HOME/.zsh/mongo.zsh" ] && source "$HOME/.zsh/mongo.zsh"
