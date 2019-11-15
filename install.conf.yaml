@@ -7,5 +7,6 @@
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
     ~/.zsh: zsh
     ~/.zshrc: zshrc
