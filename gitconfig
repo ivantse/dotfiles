@@ -3,6 +3,21 @@
 [color]
 	ui = auto
 
+[alias]
+   br = branch
+   c = commit
+   cp = cherry-pick
+   cpa = cherry-pick --abort
+   cpc = cherry-pick --continue
+   d = diff
+   co = checkout
+   cob = checkout --branch
+   l = log
+   lp = log -p
+   rb = rebase
+   s = status
+   tree = log --graph --oneline --all
+
 
 [include]
 	path = ~/.gitconfig.local
