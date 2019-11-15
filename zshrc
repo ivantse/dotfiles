@@ -13,6 +13,13 @@ autoload -Uz _zplugin
 # Use with: https://github.com/sindresorhus/iterm2-snazzy
 zplugin ice pick"async.zsh" src"pure.zsh"; zplugin light sindresorhus/pure
 
+# nvm
+NVM_LAZY_LOAD=false
+zplugin light "lukechilds/zsh-nvm"
+
+# npm
+zplugin light 'lukechilds/zsh-better-npm-completion'
+
 # Fancy syntax highlighting
 zplugin light zdharma/fast-syntax-highlighting
 
