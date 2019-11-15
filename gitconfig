@@ -11,7 +11,7 @@
    cpc = cherry-pick --continue
    d = diff
    co = checkout
-   cob = checkout --branch
+   cob = checkout -b
    l = log
    lp = log -p
    rb = rebase
