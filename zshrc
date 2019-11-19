@@ -13,6 +13,9 @@ autoload -Uz _zplugin
 # Use with: https://github.com/sindresorhus/iterm2-snazzy
 zplugin ice pick"async.zsh" src"pure.zsh"; zplugin light sindresorhus/pure
 
+# ls colors
+export CLICOLOR=1
+
 # nvm
 NVM_LAZY_LOAD=false
 zplugin light "lukechilds/zsh-nvm"
