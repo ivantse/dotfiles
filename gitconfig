@@ -25,6 +25,7 @@
    cpa = cherry-pick --abort
    cpc = cherry-pick --continue
    d = diff
+   ds = diff --staged
    co = checkout
    cob = checkout -b
    l = log
