@@ -26,6 +26,9 @@ zplugin light 'lukechilds/zsh-better-npm-completion'
 # Fancy syntax highlighting
 zplugin light zdharma/fast-syntax-highlighting
 
+# completions from prezto, including git completions
+zplugin snippet PZT::modules/completion/init.zsh
+
 # fzf binary, completion, and zsh key bindings
 zplugin ice from"gh-r" as"program"; zplugin load junegunn/fzf-bin
 zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh'
@@ -43,3 +46,5 @@ setopt sharehistory
 # Custom shell configurations
 [ -e "$HOME/.zsh/rvm.zsh" ] && source "$HOME/.zsh/rvm.zsh"
 [ -e "$HOME/.zsh/mongo.zsh" ] && source "$HOME/.zsh/mongo.zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

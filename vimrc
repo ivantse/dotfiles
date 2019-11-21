@@ -10,6 +10,10 @@ endif
 
 call plug#begin()
 
+" fzf
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 " themes
 Plug 'https://github.com/tomasr/molokai.git'
 
