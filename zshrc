@@ -46,5 +46,6 @@ setopt sharehistory
 # Custom shell configurations
 [ -e "$HOME/.zsh/rvm.zsh" ] && source "$HOME/.zsh/rvm.zsh"
 [ -e "$HOME/.zsh/mongo.zsh" ] && source "$HOME/.zsh/mongo.zsh"
+[ -e "$HOME/.zsh/android-studio.zsh" ] && source "$HOME/.zsh/android-studio.zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
