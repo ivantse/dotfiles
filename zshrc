@@ -38,6 +38,7 @@ zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zs
 alias g=git
 alias gs='git status'
 alias gd='git diff'
+alias fix-git-status='prompt_pure_async_init=0; async_stop_worker prompt_pure'
 
 # zsh options
 setopt histignorealldups
