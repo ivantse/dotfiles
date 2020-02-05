@@ -1,0 +1,15 @@
+{
+    "window.zoomLevel": 2,
+    "editor.codeActionsOnSave": {
+        // "source.organizeImports": true,
+        "source.fixAll.eslint": true,
+    },
+    "javascript.implicitProjectConfig.checkJs": true,
+    "terminal.integrated.rendererType": "dom",
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "eslint.format.enable": true,
+    "files.autoSave": "onWindowChange",
+    "diffEditor.renderSideBySide": false,
+    "editor.tabSize": 2,
+}

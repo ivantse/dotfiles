@@ -12,6 +12,10 @@
     ~/.vimrc: vimrc
     ~/.zsh: zsh
     ~/.zshrc: zshrc
+    '~/Library/Application Support/Code/User':
+        if: '[ `uname` = Darwin ]'
+        path: vscode
+        recursive: false
  
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

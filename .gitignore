@@ -1,1 +1,4 @@
 zsh/android-studio.zsh
+vscode/globalStorage
+vscode/workspaceStorage
+vscode/snippets
