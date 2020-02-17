@@ -22,3 +22,10 @@ Plug 'https://github.com/tomasr/molokai.git'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 call plug#end()
+
+" tab space=2
+set ts=2
+" shiftwidth=2
+set sw=2
+" instead of tab character, uses spaces
+set expandtab
