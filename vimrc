@@ -25,7 +25,12 @@ call plug#end()
 
 " tab space=2
 set ts=2
+
 " shiftwidth=2
 set sw=2
+
 " instead of tab character, uses spaces
 set expandtab
+
+" line numbers
+set nu
