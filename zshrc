@@ -21,13 +21,13 @@ NVM_LAZY_LOAD=false
 zplugin light "lukechilds/zsh-nvm"
 
 # npm
-zplugin light 'lukechilds/zsh-better-npm-completion'
+#zplugin light 'lukechilds/zsh-better-npm-completion'
 
 # Fancy syntax highlighting
 zplugin light zdharma/fast-syntax-highlighting
 
-# completions from prezto, including git completions
-zplugin snippet PZT::modules/completion/init.zsh
+# https://github.com/sorin-ionescu/prezto/tree/master/modules/utility
+zplugin snippet PZT::modules/utility/init.zsh
 
 # fzf binary, completion, and zsh key bindings
 zplugin ice from"gh-r" as"program"; zplugin load junegunn/fzf-bin
