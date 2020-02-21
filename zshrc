@@ -13,9 +13,6 @@ autoload -Uz _zplugin
 # Use with: https://github.com/sindresorhus/iterm2-snazzy
 zplugin ice pick"async.zsh" src"pure.zsh"; zplugin light sindresorhus/pure
 
-# ls colors
-export CLICOLOR=1
-
 # nvm
 NVM_LAZY_LOAD=false
 zplugin light "lukechilds/zsh-nvm"
@@ -27,7 +24,12 @@ zplugin light "lukechilds/zsh-nvm"
 zplugin light zdharma/fast-syntax-highlighting
 
 # https://github.com/sorin-ionescu/prezto/tree/master/modules/utility
+# ls colors
 zplugin snippet PZT::modules/utility/init.zsh
+
+# fuzzy completions, but breaks npm completions
+zplugin snippet PZT::modules/completion/init.zsh
+
 
 # fzf binary, completion, and zsh key bindings
 zplugin ice from"gh-r" as"program"; zplugin load junegunn/fzf-bin
