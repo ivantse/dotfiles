@@ -13,6 +13,8 @@ call plug#begin()
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+" use ctrl-p for finding files
+nnoremap <C-p> :Files<Cr>
 
 " themes
 Plug 'https://github.com/tomasr/molokai.git'
@@ -34,3 +36,4 @@ set expandtab
 
 " line numbers
 set nu
+
