@@ -2,7 +2,7 @@
 
 ## Install
 
-`git clone https://github.com/ivantse/dotfiles.git --recurse-submodules ~/.dotfiles`
+`git clone git@github.com:ivantse/dotfiles.git --recurse-submodules ~/.dotfiles`
 `cd ~/.dotfiles`
 `./install`
 
