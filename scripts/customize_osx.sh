@@ -39,6 +39,7 @@ defaults write com.apple.screencapture location -string "$HOME/Documents/ScreenS
 ## restart affected services
 for app in \
   "Touch Bar agent" \
+  "Dock" \
   "ControlStrip" \
   "SystemUIServer" \
   "cfprefsd"; do
