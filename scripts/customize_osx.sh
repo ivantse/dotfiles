@@ -20,7 +20,18 @@ defaults write com.apple.systemuiserver menuExtras '
   "/System/Library/CoreServices/Menu Extras/Volume.menu"
 )'
 
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -bool true
 
+# Disable automatic capitalization
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
+# disable automatic period substitution
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+# clock settings
+defaults write com.apple.menuextra.clock IsAnalog -bool false
+defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm"
 
 ## Dock
 
