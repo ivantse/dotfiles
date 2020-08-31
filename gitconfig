@@ -35,6 +35,8 @@
    s = status
    tree = log --graph --oneline --all
 
+[pull]
+  ff = only
 
 [include]
 	path = ~/.gitconfig.local
