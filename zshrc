@@ -19,13 +19,12 @@ zplugin light "lukechilds/zsh-nvm"
 # Fancy syntax highlighting
 zplugin light zdharma/fast-syntax-highlighting
 
-# https://github.com/sorin-ionescu/prezto/tree/master/modules/utility
-# ls colors
-zplugin snippet PZT::modules/utility/init.zsh
+## Colors for LS (macOS)
+export CLICOLOR=1
+export LSCOLORS="gxfxcxdxbxegedabagacad"
 
 # fuzzy completions, but breaks npm completions
 zplugin snippet PZT::modules/completion/init.zsh
-
 
 # fzf binary, completion, and zsh key bindings
 zplugin ice from"gh-r" as"program"; zplugin load junegunn/fzf-bin
