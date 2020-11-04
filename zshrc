@@ -35,6 +35,7 @@ zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zs
 alias g=git
 alias gs='git status'
 alias gd='git diff'
+alias gds='git diff --staged'
 
 # zsh options
 setopt histignorealldups
