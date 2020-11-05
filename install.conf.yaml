@@ -12,6 +12,9 @@
     ~/.vimrc: vimrc
     ~/.zsh: zsh
     ~/.zshrc: zshrc
+    '~/Library/Application Support/iTerm2/DynamicProfiles/ivantse.json':
+        if: '[ `uname` = Darwin ]'
+        path: iterm2/DynamicProfiles/ivantse.json
     '~/Library/Application Support/Code/User/settings.json':
         if: '[ `uname` = Darwin ]'
         path: vscode/settings.json
@@ -21,7 +24,11 @@
   - Brewfile
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
-    - [scripts/customize_osx.sh]
+    - 
+      command: git submodule update --init --recursive
+      description: Installing dotfiles submodules
+    - 
+      command: scripts/customize_osx.sh
+      description: Setting customizations for macOS
     - [code --install-extension ms-azuretools.vscode-docker]
     - [code --install-extension vscodevim.vim]

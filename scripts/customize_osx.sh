@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# exit if we arent running on OSX
+# exit if we aren't running on OSX
 uname -a | grep -q Darwin || exit 0
 
 # Close any open System Preferences panes, to prevent them from overriding
