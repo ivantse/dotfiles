@@ -31,6 +31,8 @@ zplugin ice from"gh-r" as"program"; zplugin load junegunn/fzf-bin
 zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh'
 zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zsh'
 
+export EDITOR='nvim'
+
 # Aliases
 alias g=git
 alias gs='git status'
