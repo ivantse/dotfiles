@@ -37,6 +37,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gds='git diff --staged'
 
+alias dcr='docker-compose run --rm'
+
 # zsh options
 setopt histignorealldups
 setopt sharehistory
