@@ -12,7 +12,5 @@
     "files.autoSave": "onWindowChange",
     "diffEditor.renderSideBySide": false,
     "editor.tabSize": 2,
-    "editor.rulers": [80],
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80
+    "editor.rulers": [80]
 }
