@@ -32,6 +32,7 @@ zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/key-bindings.
 zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zsh'
 
 export EDITOR='nvim'
+export GPG_TTY=$(tty)
 
 # Aliases
 alias g=git
