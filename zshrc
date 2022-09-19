@@ -1,35 +1,35 @@
-# Set up zplugin
-local -A ZPLGM
-ZPLGM[HOME_DIR]="${ZDOTDIR:-$HOME}/.zplugin"
-if [[ ! -d "${ZPLGM[HOME_DIR]}" ]]; then
-  mkdir -p "${ZPLGM[HOME_DIR]}"
-  git clone https://github.com/zdharma/zplugin.git "${ZPLGM[HOME_DIR]}/bin"
+# Set up zinit
+local -A ZINIT
+ZINIT[HOME_DIR]="${ZDOTDIR:-$HOME}/.zinit"
+if [[ ! -d "${ZINIT[HOME_DIR]}" ]]; then
+  mkdir -p "${ZINIT[HOME_DIR]}"
+  git clone https://github.com/zdharma-continuum/zinit.git "${ZINIT[HOME_DIR]}/bin"
 fi
-source "${ZPLGM[HOME_DIR]}/bin/zplugin.zsh"
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
+source "${ZINIT[HOME_DIR]}/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
 # nvm
 NVM_LAZY_LOAD=false
-zplugin light "lukechilds/zsh-nvm"
+zinit light "lukechilds/zsh-nvm"
 
 # npm
-#zplugin light 'lukechilds/zsh-better-npm-completion'
+#zinit light 'lukechilds/zsh-better-npm-completion'
 
 # Fancy syntax highlighting
-zplugin light zdharma/fast-syntax-highlighting
+zinit light zdharma/fast-syntax-highlighting
 
 ## Colors for LS (macOS)
 export CLICOLOR=1
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 
 # fuzzy completions, but breaks npm completions
-zplugin snippet PZT::modules/completion/init.zsh
+zinit snippet PZT::modules/completion/init.zsh
 
 # fzf binary, completion, and zsh key bindings
-zplugin ice from"gh-r" as"program"; zplugin load junegunn/fzf-bin
-zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh'
-zplugin snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zsh'
+zinit ice from"gh-r" as"program"; zinit load junegunn/fzf-bin
+zinit snippet 'https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh'
+zinit snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zsh'
 
 export EDITOR='nvim'
 export GPG_TTY=$(tty)
@@ -53,3 +53,8 @@ setopt sharehistory
 [ -e "$HOME/.zsh/android-studio.zsh" ] && source "$HOME/.zsh/android-studio.zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH="$PATH:$(brew --prefix python)/libexec/bin"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
