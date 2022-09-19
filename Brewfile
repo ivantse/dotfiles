@@ -13,6 +13,9 @@ brew "htop"
 brew "keychain"
 brew "tmux"
 
+#brew "go"
+#brew "cmake"
+
 cask "docker"
 cask "1password"
 cask "dropbox"
@@ -24,5 +27,5 @@ cask "discord"
 cask "spotify"
 cask "vlc"
 cask "visual-studio-code"
-cask "zoomus"
+cask "zoom"
 
