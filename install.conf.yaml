@@ -20,8 +20,9 @@
         path: vscode/settings.json
         recursive: false
  
-- brewfile:
-  - Brewfile
+- ifmacos:
+  - brewfile:
+    - Brewfile
 
 - shell:
     - 
