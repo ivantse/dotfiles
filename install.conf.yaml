@@ -31,4 +31,3 @@
     - 
       command: scripts/customize_osx.sh
       description: Setting customizations for macOS
-    - [code --install-extension vscodevim.vim]
