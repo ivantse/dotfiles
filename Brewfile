@@ -19,7 +19,7 @@ cask "1password"
 cask "iterm2"
 cask "slack"
 cask "discord"
+cask "postman"
 cask "vlc"
 cask "visual-studio-code"
 cask "zoom"
-
