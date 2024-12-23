@@ -13,9 +13,6 @@ autoload -Uz _zinit
 NVM_LAZY_LOAD=false
 zinit light "lukechilds/zsh-nvm"
 
-# npm
-#zinit light 'lukechilds/zsh-better-npm-completion'
-
 # Fancy syntax highlighting
 zinit light zdharma/fast-syntax-highlighting
 
@@ -26,11 +23,6 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 # fuzzy completions, but breaks npm completions
 zinit snippet PZT::modules/completion/init.zsh
 
-# fzf binary, completion, and zsh key bindings
-zinit ice from"gh-r" as"program"; zinit load junegunn/fzf-bin
-zinit snippet 'https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh'
-zinit snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zsh'
-
 export EDITOR='nvim'
 export GPG_TTY=$(tty)
 
@@ -39,7 +31,6 @@ alias g=git
 alias gs='git status'
 alias gd='git diff'
 alias gds='git diff --staged'
-
 alias dcr='docker compose run --rm'
 
 # zsh options
@@ -56,7 +47,7 @@ setopt sharehistory
 
 case "$OSTYPE" in
   darwin*)
-    export PATH="$PATH:$(brew --prefix python)/libexec/bin"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
   ;;
 esac
 

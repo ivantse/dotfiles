@@ -12,6 +12,7 @@ brew "git"
 brew "htop"
 brew "keychain"
 brew "tmux"
+brew "fzf"
 
 cask "docker"
 cask "1password"
